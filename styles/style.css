@@ -6,10 +6,13 @@
     box-sizing: border-box;
     font-family: poppins;
 }
-header, main{
+body{
     max-width: 1110px;
-    padding: 5px 10px 0 10px;
     margin: 0rem auto;
+}
+header{
+    padding: 5px 10px 0 10px;
+
     background-color: rgb(236, 232, 235);
 }
 .menu-icon{
@@ -69,6 +72,9 @@ header, main{
     .cart{
         display: inline-block;
     }
+    .cart button{
+        padding: 5px 10px;
+    }
 }
 
 /* banner section starts */
@@ -77,9 +83,11 @@ header, main{
     justify-content:space-between;
     align-items: center;
 }
+.hero-content{
+    margin: 1rem 0 1rem 2rem;
+}
 .hero-content p{
     max-width: 505px;
-    margin: 1rem 0;
     color: rgb(58, 58, 58);
     font-family: Poppins;
     font-size: 1.4rem;
@@ -120,16 +128,13 @@ header, main{
     font-size: 2.8rem;
     font-weight: 800;
 }
-.hero-img{
-    border-radius: 40%;
-}
 .btn-container{
     display: flex;
     gap: 10px;
     margin-top: 20px;}
-    .btn-container a{
-        text-decoration: none;
-        color: white;
+.btn-container a{
+    text-decoration: none;
+    color: white;
     }
 @media screen and (max-width:570px) {
     .hero{
@@ -141,13 +146,91 @@ header, main{
         font-size: 2rem;
         margin: 0;
     }
-    .banner-content button{
-        margin: 0px auto;
+    .hero-content{
+        margin: 0.5rem 0;
     }
     header, main{
         padding: 0px;
     }
+    .banner-img img{
+        margin-left: 20px;
+    }
+    .hero-content button{
+        padding: 5px 10px;
+    }
 }
+
+
+.about{
+    background: linear-gradient(180.00deg, rgba(0, 0, 0, 0.904),rgba(7, 2, 17, 0.774) 100%), url(../images/Rajshahi_University_Administration_Building.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.about h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(131, 5, 248);
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.about-img img{
+    width: 100%;
+    filter: drop-shadow(10px 10px 50px  rgb(210, 13, 236));
+}
+.about-content{
+    width: 50%;
+}
+.about-content p{
+    font-size: 2rem;
+}
+.about-content .name{
+    font-size: 3.9rem;
+    color: rgb(210, 13, 236);
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-content span{
+    color: rgb(210, 13, 236);
+    font-size: 2.6rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width:570px){
+    .about{
+        padding: 5px;
+    }
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    .about-content{
+        width: 100%;
+        text-align: start;
+    }
+    .start{
+        height: 90px;
+        text-align: center;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 button:hover{
     transform: scale(1.031);
     background-color: rgb(255, 255, 255);
