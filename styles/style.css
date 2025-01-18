@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins;
 }
 header, main{
     max-width: 1110px;
@@ -22,6 +23,7 @@ header, main{
     position: sticky;
 }
 .navbar h4{
+    font-family: 'Times New Roman';
     font-size: 1.5rem;
     font-size: 3rem;
     text-shadow: 7px 5px 15px rgb(37, 35, 35);
@@ -95,18 +97,21 @@ header, main{
     border: none;
     border-radius: 8px;
     transition: 0.2s;
+    cursor: pointer;
 }
 .btn-icon{
     font-size: 1.5rem;
 }
 .banner-img{
-    background: url("../images/Circle\ design.svg");
+    background: url(../images/pngtree-purple-ring-smoke-effect-png-image_2306041-removebg-preview.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .banner-img img{
-    width: 100%;
+    width: 90%;
+    margin-left: 40px;
+    margin-bottom: 30px;
 }
 .placement{
     display: inline-block;
@@ -122,6 +127,10 @@ header, main{
     display: flex;
     gap: 10px;
     margin-top: 20px;}
+    .btn-container a{
+        text-decoration: none;
+        color: white;
+    }
 @media screen and (max-width:570px) {
     .hero{
         flex-direction: column;
