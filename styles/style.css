@@ -12,7 +12,7 @@ body{
 }
 header{
     padding: 5px 10px 0 10px;
-
+    border-radius: 20px;
     background-color: rgb(236, 232, 235);
 }
 .menu-icon{
@@ -162,6 +162,7 @@ header{
 
 
 .about{
+    border-radius: 20px;
     background: linear-gradient(180.00deg, rgba(0, 0, 0, 0.904),rgba(7, 2, 17, 0.774) 100%), url(../images/Rajshahi_University_Administration_Building.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -183,7 +184,7 @@ header{
     gap: 25px;
 }
 .about-img img{
-    width: 100%;
+    width: 80%;
     filter: drop-shadow(10px 10px 50px  rgb(210, 13, 236));
 }
 .about-content{
@@ -219,8 +220,49 @@ header{
         text-align: center;
         overflow-y: scroll;
     }
+    .about-img img{
+        width: 100%;
+    }
 }
 
+.education h1{
+    margin-top: 60px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: rgb(131, 5, 248);
+}
+.edu-container{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edu h2{
+    font-size: 1.6rem;
+}
+.edu-left, .edu-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    width: 99%;
+}
+.edu{
+    margin: 30px 0;
+}
+@media (max-width:570px){
+    .edu-container{
+        flex-direction: column;
+    }
+    .edu-left, .edu-right{
+        width: 99%;
+    }
+}
 
 
 
